@@ -1,0 +1,525 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* navigation bar start */
+ .nav{
+    border-bottom: 10px inset gray;
+    background-image: linear-gradient(-110deg,blue,pink,white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+   
+    
+}
+.logo {
+  font-size: 1.5rem;
+}
+
+span{
+    top: 0%;
+    float: left;
+    padding-left: 10%;
+   padding-right: 10%;
+}
+
+ul{
+  display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+   margin-right: 20px;
+
+}
+
+ul li a {
+  color:gray;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: x-large;
+}
+ul li a:hover {
+  color: gold;
+  zoom: 1.5;
+  background: transparent;
+
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: rgb(235, 15, 15);
+  cursor: pointer;
+  display: none;
+  
+}
+
+#check {
+  display: none;
+
+
+}
+
+
+ 
+ 
+
+/* movile navigation start */
+
+@media screen and (max-width: 900px) {
+  .checkbtn {
+    display: block;
+    order: 1;
+    margin-right: 20px;
+  }
+
+  ul {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    background-image: linear-gradient(-170deg,blue,pink,white);
+     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+
+  ul li {
+    margin: 20px 0;
+  }
+
+  ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    right: 0;
+    z-index: 1;
+  }
+  .alert {
+    padding: 890px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+  
+  }
+  p{
+padding-left: 15px;
+padding-right: 30px;
+font-size: larger;
+}
+
+
+.center{
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.grid-container {
+
+  padding: 0px;
+    display: flex ;
+flex-wrap: wrap;   
+left: 0;
+
+  }
+
+
+
+
+  .footer{
+     text-align: center;
+     font-weight: 300;
+     font-size: larger;
+    background-image: linear-gradient(-110deg,blue,pink,white);
+    
+  }
+  
+  .card {
+    font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+    display: none;
+   
+  
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 400px;
+  }
+  .container{
+    padding: 5px;
+    color: rgb(116, 111, 111);
+    margin: 10px 10px ;
+    text-align: center;
+
+  }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  mobile navigation end*/
+  
+/* navigation bar end */
+
+/*  */
+.container{
+    padding: 33px;
+    color: rgb(116, 111, 111);
+    margin: 50px 20% 50px 20%;
+    text-align: center;
+    box-shadow: 0 16px 26px 0 rgb(223, 10, 10) ;
+
+   
+    
+}
+
+/*  */
+input[type=text], input[type=email], select, textarea{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border: 3px solid gold;
+    border-radius: 60px 0 60px 0;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    resize: vertical;
+    text-align: center;
+    font-size: larger;
+}
+select option{
+    width: 20px;
+    
+}
+
+input[type=submit]{
+    
+    border: 3px solid gold;
+    border-radius:22px 0 22px 0 ;
+    padding: 20px;
+    
+    
+}
+input[type=submit]:hover{
+    color: cadetblue;
+    background-color: coral;
+
+}
+
+::placeholder{
+    color: rgb(116, 111, 111);
+    text-align: center;
+
+}
+
+/*  */
+
+/*  */
+
+.one{
+    padding: 15px;
+    line-height: 30px;
+  }
+
+  h1,h2,h3{
+    padding-bottom: 15px;
+    font-style: italic;
+
+    text-align: center;
+    color: rgb(116, 111, 111);
+
+}
+
+    
+    ol li{
+      list-style-type: 1;
+      text-align: center;
+      padding: 5px;
+    }
+        /* grid start */
+    .grid-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 50px 50%;
+        gap: 40px;
+        background-color: transparent;
+
+
+    }
+
+   
+    .grid-item{
+        padding: 30px;
+        font-size: 35px;
+        border: 6px solid coral;
+        background-color: gray;
+        border-radius: 50px 0 50px 0;
+        box-shadow: 0 16px 26px 0 rgb(223, 10, 10) ;
+
+    }
+     #hide{
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+
+    }
+    .grid-item a{
+      list-style-type: none;
+        text-align: center;
+        text-decoration: none;
+    }
+    .grid-item a:hover{
+      color: gold;
+      zoom: 1.1;
+      
+
+    }
+
+
+    /* grid close */
+    #rum{
+        display: flexbox;
+        justify-content: center;
+        grid-template-columns: auto auto auto auto auto;
+        padding-top: 30px ;
+        gap: 15px;
+
+        background-color: transparent;
+    }
+
+    #rum .grid-item{
+        padding: 5px ;
+        font-size: 25px;
+        border: 4px solid coral;
+        border-radius: 30px 0 30px 0;
+        text-align: center;
+
+    }
+    .item{
+        display: block;
+        padding: 15px;
+        border: 4px inset gray;
+    }
+
+    /* table start */
+    table, th, td {
+        color: gray;
+        border: 4px inset transparent;
+        text-align: center;
+        padding: 20px;        
+      }
+      table{
+        width: 100%;
+      }
+      td:hover{
+        border: 4px inset gold;
+        border-radius: 0 30px 0 30px ;
+        color: gold;
+
+      }
+
+      /*  table close */
+
+      /* aleart start */
+      .alert {
+        padding: 100px;
+        background-color: #f44336;
+        color: white;
+        text-align: center;
+        font-size: 44px;
+
+      }
+      
+      .closebtn {
+        float: right;
+        color: white;
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .closebtn:hover {
+        color: black;
+      }
+
+        /* aleart close */
+
+        /* footer start */
+   
+    
+    footer .footer-logo{
+        margin-bottom: 1rem;
+        width: 150px;
+        height: 120px;
+    }
+    
+    footer .footer-socials a{
+        margin-right: 1rem;
+    }
+    footer .footer-socials a:hover{
+      zoom: 1.1;
+      background: transparent;
+      box-shadow: 0 16px 26px 0 rgb(223, 10, 10) ;
+
+    }
+    footer .footer-socials{
+        margin-bottom: 2rem;
+        margin-right: -1rem;
+    }
+        
+    footer .copyright{
+        color: coral;
+        font-size: 22px;
+        font-weight: 500;
+    }
+      footer{
+        text-align: center;
+        padding: 3rem ;
+        margin: 20px 0 0;
+        border-top: 8px inset gray;
+        background-image: linear-gradient(-110deg,blue,pink,white);
+        animation: gradient 3s ease infinite;
+        
+    }
+   
+
+/*  footer close*/
+
+/*  card start*/
+
+    .card {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-flex;
+ margin: 30px;
+ padding-left: 25px;
+ text-align: center;
+
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  perspective: 400px;
+}
+img.ci{
+  width: 250px;
+  height: 250px;
+}
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 16px 26px 0 rgb(223, 10, 10) ;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  color: gray;
+  transform: rotateY(180deg);
+  font-weight: 700;
+  font-size: larger;
+}
+
+/* card close */
+
+/*  */
+/*  */
+.video{
+ align-items: center;
+ justify-content: center;
+
+}
+
+/*  */
+#myChart{
+  
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 700%;
+}
+/* 
+
+.pagination{
+  float: right;
+  display: flex ;
+  flex-direction: column;
+ 
+ position: fixed;
+top: 170px;
+  right: 0;
+}
+
+.pagination a{
+
+  color: black;
+  margin: 4px 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 5px inset ;
+  border-radius:29px 0 29px 0 ;
+  transition:  background-color  .3s;
+
+
+}
+.pagination a.active{
+  background-color: gray;
+  color: gold;
+}
+.pagination a:hover:not(.active){
+  background: transparent;
+    border-color: gold;
+    color: gray;
+    zoom: 1.1;
+
+    box-shadow: 0 16px 26px 0 rgb(223, 10, 10) ;
+}
+*/
