@@ -22,13 +22,20 @@ body{
 .logo {
   font-size: 1.5rem;
 }
-
+ 
 span{
     top: 0%;
     float: left;
     padding-left: 10%;
-   padding-right: 10%;
+   padding-right: 10%; 
+   padding-top: 20px;
+
 }
+#si{
+  animation: move 3s linear infinite;
+  animation-delay: 500ms;
+}
+
 
 ul{
   display: flex;
@@ -138,6 +145,15 @@ left: 0;
 
   }
 
+  .tab1{
+    overflow-x: scroll;
+    overflow-y: scroll;
+
+  }
+  table.tab2 tbody{
+    overflow-y: hidden;
+
+  }
 
 
 
@@ -165,7 +181,7 @@ left: 0;
   .container{
     padding: 5px;
     color: rgb(116, 111, 111);
-    margin: 10px 10px ;
+    margin: 5px 5px ;
     text-align: center;
 
   }
@@ -190,7 +206,7 @@ left: 0;
 .container{
     padding: 33px;
     color: rgb(116, 111, 111);
-    margin: 50px 20% 50px 20%;
+    margin: 50px 10% ;
     text-align: center;
     box-shadow: 0 16px 26px 0 rgb(223, 10, 10) ;
 
@@ -328,15 +344,41 @@ input[type=submit]:hover{
     }
 
     /* table start */
-    table, th, td {
+    table, th, tr,td{
         color: gray;
         border: 4px inset transparent;
         text-align: center;
-        padding: 20px;        
+        padding: 20px;  
+        width: 80px;
+        
       }
-      table{
+      .tab2{
+        padding: 20px;
+      }
+      table.tab2{
         width: 100%;
+        border-spacing: 0;
+        border: 4px inset transparent;
+
+     
       }
+      table.tab2 tbody,
+      table.tab2 thead
+      {
+        display: block;
+     
+      }
+   
+    
+      table.tab2 tbody {
+        height: 350px;
+        overflow-y:scroll;
+     
+    
+      }
+
+    
+         /* 
       td:hover{
         border: 4px inset gold;
         border-radius: 0 30px 0 30px ;
@@ -375,11 +417,24 @@ input[type=submit]:hover{
         /* footer start */
    
     
-    footer .footer-logo{
-        margin-bottom: 1rem;
-        width: 150px;
-        height: 120px;
-    }
+    footer .footer-logo
+    {
+      margin-bottom: 1rem;
+      width: 150px;
+      height: 120px;
+  animation: move 3s linear infinite;
+  animation-delay: 500ms;
+  }
+  
+  
+  @keyframes move {
+    0%{ transform: translateX(8px);}
+    20%{ transform: translateX(16px);}
+    40%{ transform: translateX(-32px);}
+    60%{ transform: translateX(64px);}
+    80%{ transform: translateX(-128px);}
+    
+  }
     
     footer .footer-socials a{
         margin-right: 1rem;
@@ -471,20 +526,46 @@ img.ci{
 
 /*  */
 /*  */
-.video{
- align-items: center;
- justify-content: center;
+.cont{
+position: relative;
+width: 100%;
+overflow: hidden;
+padding-top: 40%;
 
+}
+.resp{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /*  */
 #myChart{
-  
+  text-align: center;
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
+  max-width: 1900%;
   width: 100%;
-  max-width: 700%;
+ 
+}
+#myChart{
+  padding-top: 20px;
+animation: jumping-bars 3s linear infinite;
+animation-delay: 500ms;
+}
+
+@keyframes jumping-bars {
+  0%{ transform: translateY(8px);}
+  8%{ transform: translateY(-10px);}
+  10%{ transform: translateY(16px);}
+
+  
 }
 /* 
 
@@ -523,3 +604,5 @@ top: 170px;
     box-shadow: 0 16px 26px 0 rgb(223, 10, 10) ;
 }
 */
+
+
