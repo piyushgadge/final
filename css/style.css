@@ -86,7 +86,7 @@ ul li a:hover {
   .checkbtn {
     display: block;
     order: 1;
-    margin-right: 25px;
+    margin-right: 20px;
   }
 
   ul {
@@ -112,7 +112,7 @@ ul li a:hover {
   }
 
   #check:checked ~ ul {
-    right: 10;
+    right: 0;
     z-index: 1;
   }
   .alert {
